@@ -1,0 +1,119 @@
+h1 {
+  font-size: 30px;
+  font-weight: 540;
+  line-height: 50px;
+  margin-left: 15px;
+  color: rgb(155, 114, 170);
+}
+
+h2 {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  line-height: 50px;
+  margin-left: 5px;
+  color: rgb(85, 135, 118);
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-left: 22px;
+  color: rgb(155, 114, 170);
+}
+
+img {
+  width: 80%;
+  margin-left: 20px;
+  padding: 15px;
+  border: 2px solid rgb(85, 135, 118);
+  border-radius: 50%;
+}
+
+.sloth :hover {
+  border: 3px solid rgb(155, 114, 170);
+}
+
+.card {
+  border-radius: 15px;
+  border: 4px solid rgb(85, 135, 118);
+  padding: 30px 20px 70px;
+  background-color: #fffffa;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.question-location :hover {
+  cursor: pointer;
+}
+
+.answer-location {
+  padding: 5px 45px;
+  border: 3px solid rgb(155, 114, 170);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.search {
+  padding: 5px 30px;
+  margin-left: 90px;
+  border: 3px solid rgb(155, 114, 170);
+  border-radius: 30px;
+  text-align: center;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.search-button :hover {
+  color: rgb(85, 135, 118);
+}
+
+.current-temperature {
+  font-size: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 15px 0px 0px 45px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.weather-emoji {
+  font-size: 30px;
+}
+
+.future-temperature {
+  font-size: 20px;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.future-weekday {
+  font-size: 18px;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.units {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: -38px;
+  left: -10px;
+  text-decoration: none;
+}
+.units :hover {
+  text-decoration: none;
+}

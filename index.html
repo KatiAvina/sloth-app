@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row one">
+            <div class="col-6 question-location">
+              <form id="location-question"><input type="text" id="location-feedback" placeholder="Enter your location" class="answer-location" autocomplete="off" />
+            </div>
+            <div class="col-6 search-button">
+              <input type="submit" value="Search" class="search" />
+            </div>
+            </form>
+          </div>
+          </div>
+          
+          <br />
+
+          <div class="row two">
+            <div class="col-6 current-city">
+              <h1>Bern☀
+              </h1>
+              <p>Sunny</p>
+            </div>
+          <div class="col-6 current-date">
+              <h2 id="day-date">
+                  Thursday, August 5
+              </h2>
+          </div>
+          </div>
+
+          <br />
+
+          <div class="row three">
+              <div class="col-6 current-temperature">
+                <span id="celsius-temperature"> 26°</span>
+              </div>
+              <div class="col-6 sloth">
+              <img src="image/sloth.jpg" alt="Sloth" id="sloth" />
+              </div>
+          </div>
+
+          <br />
+
+          <p class="description">
+             Click on the Sloth for your whereabouts
+          </p>
+
+          <hr />
+
+          <div class="row four">
+              <div class="col-2 weather-emoji">
+                  ☀
+              </div>
+              <div class="col-2 weather-emoji">
+                   ☀
+              </div>
+              <div class="col-2 weather-emoji">
+                  🌥
+              </div>
+              <div class="col-2 weather-emoji">
+                  🌦
+              </div>
+              <div class="col-2 weather-emoji">
+                  🌧
+              </div>
+            <div class="col-2 weather-emoji">
+                🌩
+            </div>  
+            </div>
+
+
+        <div class="row five">
+            <div class="col-2 future-temperature">
+                26°C
+            </div>
+                <div class="col-2 future-temperature">
+                24°C
+            </div>
+                 <div class="col-2 future-temperature">
+                20°C
+            </div>
+                  <div class="col-2 future-temperature">
+                18°C
+            </div>
+                <div class="col-2 future-temperature">
+                18°C
+            </div>
+                 <div class="col-2 future-temperature">
+                16°C
+            </div>      
+        </div>
+
+         <div class="row six">
+            <div class="col-2 future-weekday">
+                Fri
+            </div>
+              <div class="col-2 future-weekday">
+                Sat
+            </div>
+             <div class="col-2 future-weekday">
+                Sun
+            </div>
+                <div class="col-2 future-weekday">
+                Mon
+            </div>
+                 <div class="col-2 future-weekday">
+                Tue
+            </div>
+               <div class="col-2 future-weekday">
+                Wed
+            </div>      
+        </div>
+
+
+            
+
+        </div>
+      </div>
+    </div>
+  <script src ="script.js">
+  </script>
+  </body>
+</html>
