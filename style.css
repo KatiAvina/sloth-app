@@ -41,7 +41,7 @@ img {
   padding: 30px 20px 50px;
   background-color: #fffffa;
   max-width: 500px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .question-location :hover {
@@ -116,4 +116,11 @@ img {
 }
 .units :hover {
   text-decoration: none;
+}
+
+.link {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 530px;
+  margin-top: 0px;
 }
