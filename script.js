@@ -42,29 +42,31 @@ let cityForm = document.querySelector("#location-question");
 cityForm.addEventListener("submit", citySearched);
 
 function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let description = response.data.weather[0].main;
-  let p = document.querySelector("p");
-  p.innerHTML = description;
   let temperatureElement = document.querySelector("#celsius-temperature");
-  temperatureElement.innerHTML = `${temperature}°`;
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  descriptionElement.innerHTML = response.data.weather[0].main;
+  humidityElement.innerHTML = `${response.data.main.humidity}%`;
+  windElement.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
   document.querySelector("h1").innerHTML = response.data.name;
-  if (temperature <= 5) {
+  if (temperatureElement <= 5) {
     document.getElementById("sloth").src = "image/sloth2.jpg";
   }
-  if (temperature > 5) {
+  if (temperatureElement > 5) {
     document.getElementById("sloth").src = "image/sloth6.jpg";
   }
-  if (temperature > 10) {
+  if (temperatureElement > 10) {
     document.getElementById("sloth").src = "image/sloth3.jpg";
   }
-  if (temperature > 15) {
+  if (temperatureElement > 15) {
     document.getElementById("sloth").src = "image/sloth5.jpg";
   }
-  if (temperature > 20) {
+  if (temperatureElement > 20) {
     document.getElementById("sloth").src = "image/sloth4.jpg";
   }
-  if (temperature > 30) {
+  if (temperatureElement > 30) {
     document.getElementById("sloth").src = "image/sloth.jpg";
   }
 }
@@ -79,5 +81,5 @@ function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let img = document.querySelector("img");
+let img = document.querySelector("#sloth");
 img.addEventListener("click", getCurrentPosition);
