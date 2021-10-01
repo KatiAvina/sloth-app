@@ -42,7 +42,7 @@ strong {
   font-size: 70px;
   font-weight: bold;
   line-height: 50px;
-  margin-left: -25px;
+  margin-left: -45px;
 }
 
 .description {
@@ -51,8 +51,8 @@ strong {
 }
 
 .icon {
-  width: 40%;
-  margin-left: -30px;
+  width: 65%;
+  margin-left: -50px;
   border: none;
 }
 
@@ -136,7 +136,7 @@ strong {
   font-weight: bold;
   position: relative;
   top: -38px;
-  left: -10px;
+  left: -20px;
   text-decoration: none;
 }
 .units :hover {

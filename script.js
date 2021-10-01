@@ -46,27 +46,32 @@ function showTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   descriptionElement.innerHTML = response.data.weather[0].main;
   humidityElement.innerHTML = `${response.data.main.humidity}%`;
   windElement.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
   document.querySelector("h1").innerHTML = response.data.name;
-  if (temperatureElement <= 5) {
+  if (temperatureElement.innerHTML <= 5) {
     document.getElementById("sloth").src = "image/sloth2.jpg";
   }
-  if (temperatureElement > 5) {
+  if (temperatureElement.innerHTML > 5) {
     document.getElementById("sloth").src = "image/sloth6.jpg";
   }
-  if (temperatureElement > 10) {
+  if (temperatureElement.innerHTML > 10) {
     document.getElementById("sloth").src = "image/sloth3.jpg";
   }
-  if (temperatureElement > 15) {
+  if (temperatureElement.innerHTML > 15) {
     document.getElementById("sloth").src = "image/sloth5.jpg";
   }
-  if (temperatureElement > 20) {
+  if (temperatureElement.innerHTML > 20) {
     document.getElementById("sloth").src = "image/sloth4.jpg";
   }
-  if (temperatureElement > 30) {
+  if (temperatureElement.innerHTML > 30) {
     document.getElementById("sloth").src = "image/sloth.jpg";
   }
 }
