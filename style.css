@@ -51,8 +51,8 @@ strong {
 }
 
 .icon {
-  width: 65%;
-  margin-left: -50px;
+  width: 60%;
+  margin-left: -45px;
   border: none;
 }
 
@@ -136,9 +136,10 @@ strong {
   font-weight: bold;
   position: relative;
   top: -38px;
-  left: -20px;
-  text-decoration: none;
+  left: -15px;
 }
-.units :hover {
+
+.active {
+  color: black;
   text-decoration: none;
 }
