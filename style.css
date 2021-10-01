@@ -139,7 +139,11 @@ strong {
   left: -15px;
 }
 
-.active {
+.units .active {
   color: black;
+  text-decoration: none;
+}
+
+.units .fahrenheit-link {
   text-decoration: none;
 }
