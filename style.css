@@ -112,22 +112,23 @@ strong {
   font-family: "Poppins", sans-serif;
 }
 
-.weather-emoji {
-  font-size: 30px;
+.forecast-icon-1 {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 120%;
 }
 
-.future-temperature {
-  font-size: 20px;
-  padding-top: 10px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-
-.future-weekday {
+.forecast-day {
+  text-align: center;
   font-size: 18px;
-  padding-top: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  margin-top: -5px;
+}
+
+.weather-temperature-min {
+  font-weight: 550;
 }
 
 .units {
