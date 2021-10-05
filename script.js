@@ -21,6 +21,30 @@ if (hours >= 12) {
   newDate.innerHTML = `${day}, ${hours}:${minutes} am`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+              <div class="col-2">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="" class="forecast-icon-1"/>
+                <div class="forecast-day">
+               <span class="weather-temperature-max">26°</span> <span class="weather-temperature-min">10°</span>
+                ${day}
+                </div>
+              </div>
+            `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function citySearched(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#location-feedback");
@@ -116,3 +140,5 @@ function displayCelsiusTemperature(event) {
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+displayForecast();
