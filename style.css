@@ -45,21 +45,6 @@ strong {
   margin-left: -45px;
 }
 
-.description {
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-.icon {
-  width: 60%;
-  margin-left: -45px;
-  border: none;
-}
-
-.sloth :hover {
-  border: 3px solid rgb(155, 114, 170);
-}
-
 .card {
   width: 450px;
   max-width: 100%;
@@ -71,14 +56,11 @@ strong {
   margin: 20px auto 0px;
 }
 
-.question-location :hover {
-  cursor: pointer;
-}
-
 .answer-location {
   padding: 5px 20px;
   border: 3px solid rgb(155, 114, 170);
   border-radius: 30px;
+  text-align: center;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -89,12 +71,20 @@ strong {
   border: 3px solid rgb(155, 114, 170);
   border-radius: 30px;
   background-color: white;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
-.search-button :hover {
-  color: rgb(85, 135, 118);
+.description {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 60%;
+  margin-left: -45px;
+  border: none;
 }
 
 .current-temperature {
@@ -104,7 +94,30 @@ strong {
   padding: 15px 0px 0px 45px;
 }
 
-.text {
+.units {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: -38px;
+  left: -15px;
+}
+
+.units .active {
+  color: black;
+  text-decoration: none;
+}
+
+.units .fahrenheit-link {
+  text-decoration: none;
+}
+
+.sloth :hover {
+  border: 3px solid rgb(155, 114, 170);
+  cursor: pointer;
+}
+
+.whereabouts {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 0;
@@ -130,27 +143,21 @@ strong {
   font-weight: 550;
 }
 
-.units {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  position: relative;
-  top: -38px;
-  left: -15px;
-}
-
-.units .active {
-  color: black;
-  text-decoration: none;
-}
-
-.units .fahrenheit-link {
-  text-decoration: none;
-}
-
 .reference-link {
   width: 400px;
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.github-link {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.linkedin-link {
+  color: rgb(155, 114, 170);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
