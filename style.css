@@ -94,6 +94,10 @@ strong {
   padding: 15px 0px 0px 45px;
 }
 
+.celsius-temperature {
+  font-size: 65px;
+}
+
 .units {
   font-size: 13px;
   font-family: "Poppins", sans-serif;
